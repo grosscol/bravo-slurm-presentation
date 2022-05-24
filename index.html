@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="Display Lab">
-  <meta name="dcterms.date" content="2019-05-21">
-  <title>Demo Slides</title>
+  <meta name="author" content="Colin Gross">
+  <meta name="dcterms.date" content="2022-05-23">
+  <title>BRAVO Slurm</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -90,78 +90,226 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Demo Slides</h1>
-  <p class="author">Display Lab</p>
-  <p class="date">2019-05-21</p>
-</section>
-
-<section id="first-title" class="title-slide slide level1">
-<h1>First Title</h1>
-<p>Welcome to the first slide.</p>
-<p>Display Lab</p>
-<p>2019-05-21</p>
-</section>
-
-<section id="second-title" class="title-slide slide level1">
-<h1>Second Title</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae justo eget magna fermentum iaculis.</p>
+  <h1 class="title">BRAVO Slurm</h1>
+  <p class="author">Colin Gross</p>
+  <p class="date">2022-05-23</p>
 </section>
 
 <section>
-<section id="third-title" class="title-slide slide level1">
-<h1>Third Title</h1>
-<p>Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nunc mattis enim ut tellus elementum sagittis vitae et.</p>
-</section>
-<section id="sub-1" class="slide level2">
-<h2>3 Sub 1</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">&quot;Hello World&quot;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span><span class="kw">..</span><span class="dv">10</span>)<span class="at">.each</span><span class="kw">{</span> <span class="kw">|</span>n<span class="kw">|</span> <span class="fu">puts</span> n<span class="kw">+</span><span class="dv">10</span> <span class="kw">}</span></span></code></pre></div>
-<p>Enim nulla aliquet porttitor lacus luctus accumsan. Nulla pellentesque dignissim enim sit amet.</p>
-</section>
-<section id="sub-2" class="slide level2">
-<h2>3 Sub 2</h2>
-<p><del>Auctor neque vitae tempus quam pellentesque.</del></p>
-<h3 id="scelerisque-viverra-mauris-in-aliquam-sem-fringilla.">Scelerisque viverra mauris in aliquam sem fringilla.</h3>
-<p>Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.</p>
-</section>
-<section id="sub-3" class="slide level2">
-<h2>3 Sub 3</h2>
-<p><em>Massa id neque aliquam vestibulum morbi blandit cursus risus at.</em> <em>Vestibulum sed arcu non odio euismod.</em> <strong>Ut tellus elementum sagittis vitae et leo duis ut.</strong></p>
-</section></section>
-<section id="fourth-title" class="title-slide slide level1">
-<h1>Fourth Title</h1>
-<ul>
-<li>Duis at tellus at urna condimentum mattis pellentesque.</li>
-<li>Morbi leo urna molestie at elementum eu facilisis sed.</li>
-<li>Vel elit scelerisque mauris pellentesque pulvinar pellentesque.</li>
-</ul>
-</section>
-
 <section id="section" class="title-slide slide level1">
 <h1></h1>
-<ol type="1">
-<li>Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.</li>
-<li>Curabitur vitae nunc sed velit dignissim sodales ut eu.</li>
-<li>Urna nec tincidunt praesent semper feugiat nibh sed.</li>
-</ol>
+<h3>
+BRAVO Data Prep: Slurm
+</h3>
+<p>Building compute infrastructure and shaving yaks.</p>
 </section>
-
-<section id="sixth-title" class="title-slide slide level1">
-<h1>Sixth Title</h1>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<h3 id="yak-shaving">Yak Shaving</h3>
+<p><img data-src="assets/yak_black.svg" width="400" /></p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
 <ul>
-<li>Suspendisse potenti nullam ac tortor vitae.</li>
-<li>Congue quisque egestas diam in arcu cursus euismod.</li>
-<li>Consectetur adipiscing elit duis tristique sollicitudin.</li>
+<li><p><strong>Yak shaving</strong> refers to a series of tangential tasks that need to be performed before a project can progress.</p></li>
+<li><p>Attributed to Carlin Vieri and inspired by an episode of The Ren &amp; Stimpy Show.</p></li>
+<li><p>The term’s name alludes to the seemingly random and tangential nature of the tasks being performed, even though they may be necessary to solve a larger problem.</p></li>
+</ul>
+</section></section>
+<section>
+<section id="section-3" class="title-slide slide level1">
+<h1></h1>
+<h3>
+SchedMD
+</h3>
+<blockquote>
+<p>SchedMD® is the core company behind the Slurm workload manager software, a free open-source workload manager designed specifically to satisfy the demanding needs of high performance computing.</p>
+</blockquote>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<h3 id="providers-terraform">Provider’s Terraform</h3>
+<ul>
+<li>SchedMD slurm-gcp <a href="https://github.com/SchedMD/slurm-gcp/tree/e82eba4336f05e31618810ae2df0074c10339ec7">project on github</a></li>
+<li>Has a terraform directory (<code>tf</code>)
+<ul>
+<li>Has modules!</li>
+<li>Has examples!</li>
+</ul></li>
 </ul>
 </section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<h3 id="only-slightly-outdated">Only <em>Slightly</em> Outdated</h3>
+<p>Current terraform version is 1.2.1</p>
+<pre class="tf"><code>terraform {
+  required_providers {
+    google = {
+      source  = &quot;hashicorp/google&quot;
+      version = &quot;&gt;= 3.54&quot;
+    }
+  }
 
+  required_version = &quot;&gt;= 0.12.20&quot;
+}</code></pre>
+</section></section>
+<section>
+<section id="section-6" class="title-slide slide level1">
+<h1></h1>
+<h3>
+First yak: Update Terraform Version
+</h3>
+<ul>
+<li>Terraform version 0.12.2 to 1.1.7</li>
+</ul>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<h3 id="variables">Variables</h3>
+<p>Variables in child modules are no longer automagically present.</p>
+<pre>
+<font color="#C4A000"><b>Warning: </b></font><b>Value for undeclared variable</b>
+<font color="#C4A000"><b>Warning: </b></font><b>Value for undeclared variable</b>
+<font color="#C4A000"><b>Warning: </b></font><b>Value for undeclared variable</b>
+<font color="#C4A000"><b>Warning: </b></font><b>Value for undeclared variable</b>
+</pre>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<h3 id="solution-placeholders">Solution: Placeholders</h3>
+<ul>
+<li>Add placeholders to <code>variables.tf</code> in top level module.</li>
+</ul>
+<pre class="tf"><code># Placeholders for vars of modules passed verbatim
+#   See io.tf of modules for full description.
+variable &quot;controller_machine_type&quot; {}
+variable &quot;controller_image&quot;        {}
+variable &quot;controller_disk_type&quot;    {}
+variable &quot;controller_disk_size_gb&quot; {}</code></pre>
+</section></section>
+<section>
+<section id="section-9" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Terraform Cloud
+</h3>
+<blockquote>
+<p>Terraform Cloud is an application that helps teams use Terraform together.</p>
+</blockquote>
+<ul>
+<li>Manages Terraform runs in a consistent and reliable environment</li>
+<li>Easy access to shared state</li>
+<li>Securely stores secret data</li>
+</ul>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<h3 id="shared-variables">Shared Variables</h3>
+<p><img data-src="assets/tf_cloud_vars.png" width="600" /></p>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<h3 id="shared-environment">Shared Environment</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode txt"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>∫ workspace/slurm_vms (deb_img)⮞ terraform plan</span></code></pre></div>
+<p>Runs on terraform cloud remote VM:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode txt"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Running plan in Terraform Cloud. Output will stream here. Pressing Ctrl-C</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>will stop streaming the logs, but will not stop the plan running remotely.</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>Preparing the remote plan...</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>To view this run in a browser, visit:</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>https://app.terraform.io/app/statgen/bravo-slurm/runs/run-tbnYAVwbcp9W2R5s</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>Waiting for the plan to start...</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>Terraform v1.1.7</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>on linux_amd64</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>Initializing plugins and modules...</span></code></pre></div>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+<h3 id="shared-environment-scope">Shared Environment Scope</h3>
+<p>TF top level directory + cloud Workspace Vars</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode txt"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>slurm_vms/</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>├── main.tf</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>├── modules/</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>├── outputs.tf</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>├── slurm.tfvars</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>├── variables.tf</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>└── versions.tf</span></code></pre></div>
+</section></section>
+<section>
+<section id="section-13" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Second yak: Script references
+</h3>
+<p>In provider modules, found relative paths to outside project directory.</p>
+<pre class="tf"><code>metadata_startup_script =
+  file(&quot;${path.module}/../../../scripts/startup.sh&quot;)</code></pre>
+<p>Only one directory above modules available!</p>
+<pre class="tree"><code>slurm_vms/
+├── main.tf
+├── modules
+│   ├── compute
+│   ├── controller
+│   └── login
+├── variables.tf
+└── versions.tf</code></pre>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+<h3 id="solution-common-scripts-module">Solution: Common Scripts Module</h3>
+<pre class="tree"><code>└── modules
+    ├── common
+    │   └── scripts
+    │       ├── startup.sh
+    │       └── util.py
+    ├── compute
+    ├── controller
+    └── login</code></pre>
+<p>Provide scripts from sibling module</p>
+<pre><code>metadata_startup_script = 
+  module.common.metadata_startup_script</code></pre>
+</section></section>
+<section>
+<section id="section-15" class="title-slide slide level1">
+<h1></h1>
+<h3>
+Easy Provisioning
+</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">∫</span> workspace/slurm_net <span class="er">(</span><span class="ex">main</span><span class="kw">)</span><span class="ex">⮞</span> terraform apply</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode txt"><code class="sourceCode default"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>filestore_ip_app = &quot;10.195.88.34&quot;</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>filestore_ip_home = &quot;10.8.189.242&quot;</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>filestore_name_app = &quot;slurm_app&quot;</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>filestore_name_home = &quot;slurm_home&quot;</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>network_name = &quot;bravo-slurm-vpc&quot;</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>subnet_name = &quot;bravo-slurm-subnet&quot;</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">∫</span> workspace/slurm_vms <span class="er">(</span><span class="ex">deb_img</span><span class="kw">)</span><span class="ex">⮞</span> terraform apply</span></code></pre></div>
+<pre><code>login_nat_ips = [
+  &quot;34.72.34.241&quot;,
+]</code></pre>
+</section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+<h3 id="slurm-provisioned">Slurm Provisioned</h3>
+<p><img data-src="assets/slurm_login.svg" width="650" /></p>
+</section>
+<section id="section-17" class="slide level2">
+<h2></h2>
+<h3 id="slurm-provisioned-1">Slurm Provisioned</h3>
+<p>Single partition (queue) with 3 compute nodes</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode txt"><code class="sourceCode default"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>grosscol_umich_edu@dpclust-login0:~$ sinfo</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>debug*       up   infinite      3   idle dpclust-compute-0-[0-2]</span></code></pre></div>
+</section></section>
 <section>
 <section id="seventh-title" class="title-slide slide level1">
 <h1>Seventh Title</h1>
 <p>Image content</p>
 <p><img data-src="assets/top_perf.svg" /></p>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-18" class="slide level2">
 <h2></h2>
 <figure>
 <img data-src="assets/top_perf.svg" width="250" alt="image title" /><figcaption aria-hidden="true">image title</figcaption>

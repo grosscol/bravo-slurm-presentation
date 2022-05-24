@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="rich-terminal"
+   viewBox="0 0 923 511.60003"
+   version="1.1"
+   id="svg95"
+   sodipodi:docname="slurm_login.svg"
+   width="923"
+   height="511.60001"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata99">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     id="namedview97"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1"
+     inkscape:cx="874.06993"
+     inkscape:cy="207.5203"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg95" />
+  <!-- Generated with Rich https://www.textualize.io -->
+  <style
+     id="style2">
+
+    @font-face {
+        font-family: &quot;Fira Code&quot;;
+        src: local(&quot;FiraCode-Regular&quot;),
+                url(&quot;https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2&quot;) format(&quot;woff2&quot;),
+                url(&quot;https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff&quot;) format(&quot;woff&quot;);
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: &quot;Fira Code&quot;;
+        src: local(&quot;FiraCode-Bold&quot;),
+                url(&quot;https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2&quot;) format(&quot;woff2&quot;),
+                url(&quot;https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff&quot;) format(&quot;woff&quot;);
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .terminal-2777863798-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-2777863798-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-2777863798-r1 { fill: #c5c8c6 }
+    </style>
+  <defs
+     id="defs7">
+    <clipPath
+       id="terminal-2777863798-clip-terminal">
+      <rect
+         x="0"
+         y="0"
+         width="1708"
+         height="463.60001"
+         id="rect4" />
+    </clipPath>
+  </defs>
+  <rect
+     stroke="rgba(255,255,255,0.35)"
+     x="0"
+     y="0"
+     width="923"
+     height="511.60001"
+     rx="4.2830625"
+     id="rect9"
+     style="fill:#292929;stroke-width:0.73169857" />
+  <g
+     transform="translate(8,40)"
+     clip-path="url(#terminal-2777863798-clip-terminal)"
+     id="g93">
+    <g
+       class="terminal-2777863798-matrix"
+       id="g91"
+       style="font-size:20px;line-height:24.39999962px;font-family:'Fira Code', monospace;font-variant-east_asian:full-width">
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="20"
+         textLength="231.8"
+         id="text21"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">                SSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="20"
+         textLength="12.2"
+         id="text23"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="44.400002"
+         textLength="231.8"
+         id="text25"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">                SSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="44.400002"
+         textLength="12.2"
+         id="text27"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="68.800003"
+         textLength="231.8"
+         id="text29"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">                SSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="68.800003"
+         textLength="12.2"
+         id="text31"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="93.199997"
+         textLength="231.8"
+         id="text33"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">                SSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="93.199997"
+         textLength="12.2"
+         id="text35"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="117.6"
+         textLength="890.59998"
+         id="text37"
+         lengthAdjust="spacing"
+         style="fill:#28fd01"> SSSSSSSSSSSS   SSS   SSSS       SSSS    SSSSSSSSS   SSSSSSSSSSSSSSSSSSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="117.6"
+         textLength="12.2"
+         id="text39"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="142"
+         textLength="902.79999"
+         id="text41"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">SSSSSSSSSSSSS   SSS   SSSS       SSSS   SSSSSSSSSS  SSSSSSSSSSSSSSSSSSSSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="142"
+         textLength="12.2"
+         id="text43"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="166.39999"
+         textLength="902.79999"
+         id="text45"
+         lengthAdjust="spacing"
+         style="fill:#28fd01;fill-opacity:1;">SSSS            SSS   SSSS       SSSS   SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="166.39999"
+         textLength="12.2"
+         id="text47"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="190.8"
+         textLength="902.79999"
+         id="text49"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">SSSS            SSS   SSSS       SSSS   SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="190.8"
+         textLength="12.2"
+         id="text51"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="215.2"
+         textLength="902.79999"
+         id="text53"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">SSSSSSSSSSSS    SSS   SSSS       SSSS   SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="215.2"
+         textLength="12.2"
+         id="text55"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="239.60001"
+         textLength="902.79999"
+         id="text57"
+         lengthAdjust="spacing"
+         style="fill:#28fd01"> SSSSSSSSSSSS   SSS   SSSS       SSSS   SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="239.60001"
+         textLength="12.2"
+         id="text59"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="264"
+         textLength="902.79999"
+         id="text61"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">         SSSS   SSS   SSSS       SSSS   SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="264"
+         textLength="12.2"
+         id="text63"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="288.39999"
+         textLength="902.79999"
+         id="text65"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">         SSSS   SSS   SSSS       SSSS   SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="288.39999"
+         textLength="12.2"
+         id="text67"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="312.79999"
+         textLength="902.79999"
+         id="text69"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">SSSSSSSSSSSSS   SSS   SSSSSSSSSSSSSSS   SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="312.79999"
+         textLength="12.2"
+         id="text71"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="337.20001"
+         textLength="902.79999"
+         id="text73"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">SSSSSSSSSSSS    SSS    SSSSSSSSSSSSS    SSSS        SSSS     SSSS     SSSS</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="337.20001"
+         textLength="12.2"
+         id="text75"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="361.60001"
+         textLength="12.2"
+         id="text77"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="386"
+         textLength="12.2"
+         id="text79"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="410.39999"
+         textLength="646.59998"
+         id="text81"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">Last login: Tue May 24 01:26:00 2022 from 99.8.87.159</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="410.39999"
+         textLength="12.2"
+         id="text83"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="0"
+         y="434.79999"
+         textLength="439.20001"
+         id="text85"
+         lengthAdjust="spacing"
+         style="fill:#28fd01">grosscol_umich_edu@dpclust-login0:~$</text>
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="434.79999"
+         textLength="12.2"
+         id="text87"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+      <text
+         class="terminal-2777863798-r1"
+         x="1708"
+         y="459.20001"
+         textLength="12.2"
+         id="text89"
+         lengthAdjust="spacing"
+         style="fill:#28fd01" />
+    </g>
+  </g>
+</svg>

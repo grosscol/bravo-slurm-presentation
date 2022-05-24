@@ -1,17 +1,21 @@
 ---
-author: Display Lab
-title: Demo Slides
-date: 2019-05-21
+author: Colin Gross
+title: BRAVO Slurm GCP
+date: 2022-05-23
 ---
 
-# First Title
-Welcome to the first slide.
+#
+<h3>BRAVO Data Prep: Slurm</h3>
+Building compute infrastructure and shaving yaks.
 
-Display Lab
+##
+### Yak Shaving
 
-2019-05-21
+![](assets/yak_black.svg){ width=400px }
 
-# Second Title
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Vitae justo eget magna fermentum iaculis. 
+##
+- **Yak shaving** refers to a series of tangential tasks that need to be performed before a project can progress. 
 
+- Attributed to Carlin Vieri and inspired by an episode of The Ren & Stimpy Show. 
+
+- The term's name alludes to the seemingly random and tangential nature of the tasks being performed, even though they may be necessary to solve a larger problem.
