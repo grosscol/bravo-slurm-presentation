@@ -17,7 +17,7 @@ date: 2022-05-23
     - Has examples!
 
 ##
-### Only _Slightly_ Outdated
+### Only *Slightly* Outdated
 Current terraform version is 1.2.1
 ```tf
 terraform {
@@ -119,7 +119,7 @@ metadata_startup_script =
   file("${path.module}/../../../scripts/startup.sh")
 ```
 
-Only one directory above modules available!
+Only one directory above modules is available!
 ```tree
 slurm_vms/
 ├── main.tf

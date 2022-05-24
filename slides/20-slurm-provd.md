@@ -6,7 +6,7 @@ date: 2022-05-23
 
 # 
 <h3>Easy Provisioning</h3>
-```sh
+```
 ∫ workspace/slurm_net (main)⮞ terraform apply
 ```
 ```txt
@@ -18,7 +18,7 @@ network_name = "bravo-slurm-vpc"
 subnet_name = "bravo-slurm-subnet"
 ```
 
-```sh
+```
 ∫ workspace/slurm_vms (deb_img)⮞ terraform apply
 ```
 ```
@@ -33,10 +33,12 @@ login_nat_ips = [
 ![](assets/slurm_login.svg){ width=650px }
 
 ##
-### Slurm Provisioned
+### Check Cluster
 Single partition (queue) with 3 compute nodes
 ```txt
 grosscol_umich_edu@dpclust-login0:~$ sinfo
+```
+```txt
 PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
 debug*       up   infinite      3   idle dpclust-compute-0-[0-2]
 ```
