@@ -1,12 +1,12 @@
 # Reveal Slides for Github Pages via Pandoc
 
-slides available at https://grosscol.github.io/slides-template
+Slides available at https://grosscol.github.io/bravo-slurm-presentation
 
 ## Making a New Presentation
 Clone and rename this repository.  Use your desired project name instead of `newname` below:
 ```sh
 git clone --shallow-submodules --recurse-submodules \
-  https://github.com/grosscol/slides-template.git newname
+  https://github.com/grosscol/slides-template.git new_name
 ```
 
 ## Writing & Building Slides
@@ -21,7 +21,7 @@ pandoc -t revealjs --template=pandoc-templates/default.revealjs \
 
 ## Publishing to Github Pages
 
-1. Create repo: https://github.com/new
+1. Create repo: https://github.com/new_name
 1. Set repo as remote
     ```sh
     git remote set-url origin URL_TO_YOUR_REPO
